@@ -1,4 +1,5 @@
-﻿#region 
+﻿#region
+
 //------------------------------------------------------------------------
 // <copyright file= "Voucher.cs" company="Total Team Designs">
 // Copyright (c) 2017 Total Team Designs. All rights reserved
@@ -6,16 +7,12 @@
 // Author: Tom Gauden
 // <date>4/2/2017 9:30:11 PM</date>
 //------------------------------------------------------------------------
-#endregion 
+#endregion
+
 namespace TotalTeamDesigns.Models
 {
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
     using Contracts.Models;
+    using System.ComponentModel.DataAnnotations;
 
     /// <summary>
     /// Voucher data model class

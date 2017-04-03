@@ -1,4 +1,5 @@
-﻿#region 
+﻿#region
+
 //------------------------------------------------------------------------
 // <copyright file= "IVoucherType.cs" company="Total Team Designs">
 // Copyright (c) 2017 Total Team Designs. All rights reserved
@@ -6,15 +7,10 @@
 // Author: Tom Gauden
 // <date>4/2/2017 7:43:10 PM</date>
 //------------------------------------------------------------------------
-#endregion 
+#endregion
+
 namespace TotalTeamDesigns.Contracts.Models
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
     /// <summary>
     /// Voucher Type Interface class
     /// </summary>
