@@ -18,6 +18,6 @@ namespace TotalTeamDesigns.Contracts.Modules
     /// </summary>
     public interface IeVoucher
     {
-        void ProcessVoucher(IeVoucher voucher, ICart cart, ICartVoucher cartVoucher);
+        void ProcessVoucher(IVoucher voucher, ICart cart, ICartVoucher cartVoucher);
     }
 }

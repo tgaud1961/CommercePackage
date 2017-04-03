@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,7 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CartService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TotalTeamDesigns.Contracts\TotalTeamDesigns.Contracts.csproj">
+      <Project>{17361959-9962-4CE4-99EB-9D6545F97730}</Project>
+      <Name>TotalTeamDesigns.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TotalTeamDesigns.Models\TotalTeamDesigns.Models.csproj">
+      <Project>{94ECBA61-54C6-4469-953F-58983DBC9968}</Project>
+      <Name>TotalTeamDesigns.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
