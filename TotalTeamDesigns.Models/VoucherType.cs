@@ -9,22 +9,22 @@
 #endregion 
 namespace TotalTeamDesigns.Models
 {
-    using Contracts.Models;
     using System.ComponentModel.DataAnnotations;
-
+    using Contracts.Models;
+    
     /// <summary>
-    /// 
+    /// Voucher Type Data model
     /// </summary>
     public class VoucherType : IVoucherType
     {
-        public int VoucherTypeId { get; set; }
+        public new int VoucherTypeId { get; set; }
 
-        public string VoucherModule { get; set; }
+        public new string VoucherModule { get; set; }
 
         [MaxLength(30)]
-        public string Type { get; set; }
+        public new string Type { get; set; }
 
         [MaxLength(150)]
-        public string Description { get; set; }
+        public new string Description { get; set; }
     }
 }

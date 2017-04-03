@@ -11,8 +11,8 @@
 
 namespace TotalTeamDesigns.Models
 {
-    using Contracts.Models;
     using System.ComponentModel.DataAnnotations;
+    using Contracts.Models;
 
     /// <summary>
     /// Voucher data model class
@@ -29,7 +29,8 @@ namespace TotalTeamDesigns.Models
         [MaxLength(150)]
         public string VoucherDescription { get; set; }
 
-        public int AppliesToProductId { get; set; }////Applies to specific product
+        ////Applies to specific product
+        public int AppliesToProductId { get; set; }
 
         public decimal Value { get; set; }
 

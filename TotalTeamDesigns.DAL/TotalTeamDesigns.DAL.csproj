@@ -30,7 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,11 +49,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\DataContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CartRepository.cs" />
+    <Compile Include="Repositories\CartVoucherRepository.cs" />
+    <Compile Include="Repositories\CustomerRepository.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\RepositoryBase.cs" />
+    <Compile Include="Repositories\VoucherRepository.cs" />
+    <Compile Include="Repositories\VoucherTypeRepository.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\TotalTeamDesigns.Contracts\TotalTeamDesigns.Contracts.csproj">
+      <Project>{17361959-9962-4ce4-99eb-9d6545f97730}</Project>
+      <Name>TotalTeamDesigns.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TotalTeamDesigns.Models\TotalTeamDesigns.Models.csproj">
+      <Project>{94ECBA61-54C6-4469-953F-58983DBC9968}</Project>
+      <Name>TotalTeamDesigns.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TotalTeamDesigns.Modules.Vouchers.MoneyOff\TotalTeamDesigns.Modules.Vouchers.MoneyOff.csproj">
+      <Project>{e74bb58b-2c14-44e2-9c46-c9fe201b3ead}</Project>
+      <Name>TotalTeamDesigns.Modules.Vouchers.MoneyOff</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TotalTeamDesigns.Modules.Vouchers.PercentOff\TotalTeamDesigns.Modules.Vouchers.PercentOff.csproj">
+      <Project>{9535055f-ccb1-4f28-a9fd-e3a7367fbc88}</Project>
+      <Name>TotalTeamDesigns.Modules.Vouchers.PercentOff</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TotalTeamDesigns.Services\TotalTeamDesigns.Services.csproj">
+      <Project>{919f04a2-290b-4698-8f40-1132a0490205}</Project>
+      <Name>TotalTeamDesigns.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Repositories\" />
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
