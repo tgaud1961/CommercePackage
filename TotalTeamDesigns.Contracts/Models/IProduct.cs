@@ -1,10 +1,10 @@
 ﻿#region 
 //------------------------------------------------------------------------
-// <copyright file= "ICart.cs" company="Total Team Designs">
+// <copyright file= "IProduct.cs" company="Total Team Designs">
 // Copyright (c) 2017 Total Team Designs. All rights reserved
 // </copyright>
 // Author: Tom Gauden
-// <date>4/2/2017 10:16:41 AM</date>
+// <date>4/2/2017 7:33:20 PM</date>
 //------------------------------------------------------------------------
 #endregion 
 namespace TotalTeamDesigns.Contracts.Models
@@ -16,24 +16,18 @@ namespace TotalTeamDesigns.Contracts.Models
     using System.Threading.Tasks;
 
     /// <summary>
-    /// Interface class for cart model
+    /// Product Interface class
     /// </summary>
-    public interface ICart
+    public interface IProduct
     {
-        Guid CartId { get; set; }
+        decimal CostPrice { get; set; }
 
-        ICollection<ICartItem> ICartItems { get; }
+        string Description { get; set; }
 
-        ICollection<ICartVoucher> ICartVouchers { get; }
+        string ImageUrl { get; set; }
 
-        DateTime Date { get; set; }
+        decimal Price { get; set; }
 
-        void AddCartItem(ICartItem item);
-
-        void AddCartVoucher(ICartVoucher voucher);
-
-        decimal CartTotal();
-
-        decimal CartItemCount();
+        int ProductId { get; set; }
     }
 }

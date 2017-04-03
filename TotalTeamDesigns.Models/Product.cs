@@ -1,11 +1,11 @@
 ﻿#region 
-//---------------------------------------------------------------
-// <copyright file= "Products.cs" company="Total Team Designs">
+//------------------------------------------------------------------------
+// <copyright file= "Product.cs" company="Total Team Designs">
 // Copyright (c) 2017 Total Team Designs. All rights reserved
 // </copyright>
 // Author: Tom Gauden
-// Created: "$DateTime.Now$"
-//---------------------------------------------------------------
+// <date>4/2/2017 8:54:00 PM</date>
+//------------------------------------------------------------------------
 #endregion 
 namespace TotalTeamDesigns.Models
 {
@@ -15,11 +15,12 @@ namespace TotalTeamDesigns.Models
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using Contracts.Models;
 
     /// <summary>
-    /// Product Data Model class
+    /// 
     /// </summary>
-    public class Products
+    public class Product : IProduct
     {
         public int ProductId { get; set; }
 

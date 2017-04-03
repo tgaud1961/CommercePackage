@@ -1,23 +1,32 @@
 ﻿#region 
 //------------------------------------------------------------------------
-// <copyright file= "ICartVoucher.cs" company="Total Team Designs">
+// <copyright file= "IVoucher.cs" company="Total Team Designs">
 // Copyright (c) 2017 Total Team Designs. All rights reserved
 // </copyright>
 // Author: Tom Gauden
-// <date>4/2/2017 10:16:41 AM</date>
+// <date>4/2/2017 7:42:35 PM</date>
 //------------------------------------------------------------------------
 #endregion 
 namespace TotalTeamDesigns.Contracts.Models
 {
     using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
 
-    public interface ICartVoucher
+    /// <summary>
+    /// Voucher Interface class
+    /// </summary>
+    public interface IVoucher
     {
         int AppliesToProductId { get; set; }
 
-        Guid CartId { get; set; }
+        string AssignedTo { get; set; }
 
-        int CartVoucherId { get; set; }
+        decimal MinSpend { get; set; }
+
+        bool MultipleUse { get; set; }
 
         decimal Value { get; set; }
 
@@ -27,6 +36,6 @@ namespace TotalTeamDesigns.Contracts.Models
 
         int VoucherId { get; set; }
 
-        string VoucherType { get; set; }
+        int VoucherTypeId { get; set; }
     }
 }

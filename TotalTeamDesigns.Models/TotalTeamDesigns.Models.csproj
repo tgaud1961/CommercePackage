@@ -42,11 +42,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cart.cs" />
+    <Compile Include="CartItem.cs" />
+    <Compile Include="CartVoucher.cs" />
     <Compile Include="Customer.cs" />
-    <Compile Include="Products.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderItem.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Voucher.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TotalTeamDesigns.Contracts\TotalTeamDesigns.Contracts.csproj">
+      <Project>{17361959-9962-4CE4-99EB-9D6545F97730}</Project>
+      <Name>TotalTeamDesigns.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
