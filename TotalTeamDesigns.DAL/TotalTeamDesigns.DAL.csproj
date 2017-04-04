@@ -79,18 +79,6 @@
       <Project>{94ECBA61-54C6-4469-953F-58983DBC9968}</Project>
       <Name>TotalTeamDesigns.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TotalTeamDesigns.Modules.Vouchers.MoneyOff\TotalTeamDesigns.Modules.Vouchers.MoneyOff.csproj">
-      <Project>{e74bb58b-2c14-44e2-9c46-c9fe201b3ead}</Project>
-      <Name>TotalTeamDesigns.Modules.Vouchers.MoneyOff</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TotalTeamDesigns.Modules.Vouchers.PercentOff\TotalTeamDesigns.Modules.Vouchers.PercentOff.csproj">
-      <Project>{9535055f-ccb1-4f28-a9fd-e3a7367fbc88}</Project>
-      <Name>TotalTeamDesigns.Modules.Vouchers.PercentOff</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TotalTeamDesigns.Services\TotalTeamDesigns.Services.csproj">
-      <Project>{919f04a2-290b-4698-8f40-1132a0490205}</Project>
-      <Name>TotalTeamDesigns.Services</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

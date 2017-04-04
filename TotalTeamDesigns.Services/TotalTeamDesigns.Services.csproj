@@ -49,6 +49,10 @@
       <Project>{17361959-9962-4CE4-99EB-9D6545F97730}</Project>
       <Name>TotalTeamDesigns.Contracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TotalTeamDesigns.DAL\TotalTeamDesigns.DAL.csproj">
+      <Project>{4146e868-d762-48b3-a438-e9e1c13c16d1}</Project>
+      <Name>TotalTeamDesigns.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TotalTeamDesigns.Models\TotalTeamDesigns.Models.csproj">
       <Project>{94ECBA61-54C6-4469-953F-58983DBC9968}</Project>
       <Name>TotalTeamDesigns.Models</Name>

@@ -48,6 +48,10 @@
       <Project>{17361959-9962-4CE4-99EB-9D6545F97730}</Project>
       <Name>TotalTeamDesigns.Contracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TotalTeamDesigns.Models\TotalTeamDesigns.Models.csproj">
+      <Project>{94ecba61-54c6-4469-953f-58983dbc9968}</Project>
+      <Name>TotalTeamDesigns.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
