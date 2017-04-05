@@ -11,15 +11,24 @@ namespace TotalTeamDesigns.WebUI.Controllers
     public class HomeController : Controller
     {
         IRepositoryBase<Customer> customers;
+        IRepositoryBase<Product> products;
 
-        public HomeController(IRepositoryBase<Customer> customers)
+        public HomeController(IRepositoryBase<Customer> customers, IRepositoryBase<Product> products)
         {
             this.customers = customers;
+            this.products = products;
         }
         public ActionResult Index()
         {
-            
-            return View();
+            var productList = products.GetAll();
+            return View(productList);
+        }
+
+        public ActionResult Details(int id)
+        {
+            var product = products.GetById(id);
+
+            return View(product);
         }
 
         public ActionResult About()

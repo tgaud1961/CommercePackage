@@ -60,5 +60,21 @@ namespace TotalTeamDesigns.WebUI.Controllers
 
             return RedirectToAction("ProductList");
         }
+
+        public ActionResult EditProduct(int id)
+        {
+            Product product = products.GetById(id);
+
+            return View(product);
+        }
+
+        [HttpPost]
+        public ActionResult EditProduct(Product product)
+        {
+            products.Update(product);
+            products.Commit();
+
+            return RedirectToAction("ProductList");
+        }
     }
 }
